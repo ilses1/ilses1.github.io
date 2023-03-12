@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <span>输入0-1的不透明度值</span>
+    <input type="text">
+    <span>转化为16进制值:</span>
+    
+</body>
+<script>
+
+    function hex(num) {
+        if (num > 255) {
+            throw "'" + num + "'' is greater than 255(0xff);";
+        }
+        let str = Number(num).toString(16);
+        return ("0" + str).slice(-2);
+    }
+</script>
+
+</html>
